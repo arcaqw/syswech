@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Sistema</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="top-bar-dark"></div>
+  <div class="top-bar-light"></div>
+
+  <div class="main-layout">
+    <div class="sidebar">
+
+      <div class="menu-group">
+        <div class="menu-title" onclick="toggleMenu(this)">OPERACIONES</div>
+        <div class="menu-items">
+          <button class="menu-item" onclick="irA('Venta')">Venta</button>
+          <button class="menu-item" onclick="irA('Presupuesto')">Presupuesto</button>
+          <button class="menu-item" onclick="irA('Compra')">Compra</button>
+          <button class="menu-item" onclick="irA('Devolucion')">Devolucion</button>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-title" onclick="toggleMenu(this)">REGISTROS</div>
+        <div class="menu-items">
+          <button class="menu-item" onclick="irA('Clientes')">Clientes</button>
+          <button class="menu-item" onclick="irA('Productos')">Productos</button>
+          <button class="menu-item" onclick="irA('Proveedores')">Proveedores</button>
+          <button class="menu-item" onclick="irA('Depositos')">Depositos</button>
+        </div>
+      </div>
+
+      <div class="menu-group" id="menu-group-informes">
+        <div class="menu-title">INFORMES</div>
+        <div class="menu-items">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content" id="content">
+      <!-- Aquí aparecen las ventanas de gestión abiertas -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
