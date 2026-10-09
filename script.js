@@ -24,6 +24,12 @@ const listaProductos = [
     { value: 'p3', texto: 'Aceite Girasol 900ml', precio: 12900 }
 ];
 
+const listaProveedores = [
+  { value: 'v1', texto: 'Coca Cola' },
+  { value: 'v2', texto: 'Nescafe' },
+  { value: 'v3', texto: 'Pechugon' }
+];
+
 // Define aquí el contenido (HTML) de cada ventana según la sección.
 // El campo "onAbrir" es opcional: una función que se ejecuta justo después
 // de insertar la ventana en la pantalla (útil para inicializar componentes
@@ -209,6 +215,45 @@ const contenidoVentanas = {
       });
 
       configurarPresupuesto();
+
+    }
+  },
+  'Compra': {
+    titulo: 'Operaciones > Compra',
+    body: `
+    <label for="compra-input-factura" id="compra-lab-factura">Factura:</label>
+    <div class="combo-buscador" id="combo-compra-factura">
+      <input type="text" id="compra-input-factura" placeholder="..." autocomplete="off">
+      <input type="hidden" id="compra-select-factura-valor">
+      <div class="combo-lista" id="compra-lista-factura"></div>
+    </div>
+    <label for="compra-select-nota" id="compra-lab-nota">- Nota:</label>
+    <div class="combo-buscador" id="combo-compra-nota">
+      <input type="text" id="compra-input-nota" placeholder="..." autocomplete="off">
+    </div>
+    <label for="compra-input-proveedor" id="compra-lab-proveedor">- Proveedor:</label>
+    <div class="combo-buscador" id="combo-compra-proveedor">
+      <input type="text" id="compra-input-proveedor" placeholder="..." autocomplete="off">
+      <input type="hidden" id="compra-select-proveedor-valor">
+      <div class="combo-lista" id="compra-lista-proveedor"></div>
+    </div>
+    `,
+    onAbrir: function () {
+      initComboBuscador({
+        inputId: 'compra-input-producto',
+        listaId: 'compra-lista-productos',
+        hiddenId: 'compra-select-producto-valor',
+        opciones: listaProductos
+      });
+
+      initComboBuscador({
+        inputId: 'compra-input-proveedor',
+        listaId: 'compra-lista-proveedor',
+        hiddenId: 'compra-select-proveedor-valor',
+        opciones: listaProveedores
+      });
+
+      configurarCompra();
 
     }
   }

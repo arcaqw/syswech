@@ -602,3 +602,15 @@ body {
 .presupuesto-btn-procesar:hover{
   background-color: #f77f00;
 }
+
+#combo-compra-factura{
+  width: 195px;
+}
+
+#combo-compra-nota{
+  width: 95px;
+}
+
+#combo-compra-proveedor{
+  width: 295px;
+}
