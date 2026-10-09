@@ -138,45 +138,30 @@ const contenidoVentanas = {
   'Presupuesto': {
     titulo: 'Operaciones > Presupuesto',
     body: `
-    <label for="venta-input-cliente" id="venta-lab-cliente">Cliente:</label>
-      <div class="combo-buscador" id="combo-venta-cliente">
-        <input type="text" id="venta-input-cliente" placeholder="Buscar cliente..." autocomplete="off">
-        <input type="hidden" id="venta-select-clientes-valor">
-        <div class="combo-lista" id="venta-lista-clientes"></div>
-      </div>
-
-      <label for="venta-input-vendedor" id="venta-lab-vendedor">- Vendedor:</label>
-      <div class="combo-buscador" id="combo-venta-vendedor">
-        <input type="text" id="venta-input-vendedor" placeholder="Buscar vendedor..." autocomplete="off">
-        <input type="hidden" id="venta-select-vendedor-valor">
-        <div class="combo-lista" id="venta-lista-vendedores"></div>
-      </div>
-      <hr class="venta-linea-venta-1">
-      <label for="venta-input-producto" id="venta-lab-producto">Producto:</label>
-      <div class="combo-buscador" id="combo-venta-producto">
-        <input type="text" id="venta-input-producto" placeholder="Buscar producto..." autocomplete="off">
-        <input type="hidden" id="venta-select-producto-valor">
-        <div class="combo-lista" id="venta-lista-productos"></div>
-      </div>
-      <label for="venta-select-cantidad" id="venta-lab-cantidad">- Cantidad:</label>
-      <div class="combo-buscador" id="combo-venta-cantidad">
-        <input type="text" id="venta-input-cantidad" placeholder="Cantidad..." autocomplete="off">
-      </div>
-      <label for="venta-select-precio-unitario" id="venta-lab-precio-unitario">- Precio Unitario:</label>
-     <div class="combo-buscador" id="combo-venta-preciounitario">
-        <input type="text" id="venta-input-preciounitario" placeholder="Precio..." autocomplete="off">
-      </div>
-      <button class="venta-btn-anadir">Añadir</button>
-      <button class="venta-btn-borrar">Borrar</button>
-
-      <table class="venta-tabla">
+    <label for="presupuesto-input-producto" id="presupuesto-lab-producto">Producto:</label>
+    <div class="combo-buscador" id="combo-presupuesto-producto">
+      <input type="text" id="presupuesto-input-producto" placeholder="Buscar producto..." autocomplete="off">
+      <input type="hidden" id="presupuesto-select-producto-valor">
+      <div class="combo-lista" id="presupuesto-lista-productos"></div>
+    </div>
+    <label for="presupuesto-select-cantidad" id="presupuesto-lab-cantidad">- Cantidad:</label>
+    <div class="combo-buscador" id="combo-presupuesto-cantidad">
+      <input type="text" id="presupuesto-input-cantidad" placeholder="Cantidad..." autocomplete="off">
+    </div>
+    <label for="presupuesto-select-precio-unitario" id="presupuesto-lab-precio-unitario">- Precio Unitario:</label>
+    <div class="combo-buscador" id="combo-presupuesto-preciounitario">
+      <input type="text" id="presupuesto-input-preciounitario" placeholder="Precio..." autocomplete="off">
+    </div>
+    <button class="presupuesto-btn-anadir">Añadir</button>
+    <button class="presupuesto-btn-borrar">Borrar</button>
+    <table class="presupuesto-tabla">
         <colgroup>
-          <col class="col-venta-id">
-          <col class="col-venta-producto">
-          <col class="col-venta-cantidad">
-          <col class="col-venta-precio">
-          <col class="col-venta-total">
-          <col class="col-venta-funciones">
+          <col class="col-presupuesto-id">
+          <col class="col-presupuesto-producto">
+          <col class="col-presupuesto-cantidad">
+          <col class="col-presupuesto-precio">
+          <col class="col-presupuesto-total">
+          <col class="col-presupuesto-funciones">
         </colgroup>
         <thead>
           <tr>
@@ -188,44 +173,38 @@ const contenidoVentanas = {
             <th>Funciones</th>
           </tr>
         </thead>
-        <tbody id="venta-tabla-body">
+        <tbody id="presupuesto-tabla-body">
         </tbody>
       </table>
-      <div class = "venta-final-total">
-        <label for="venta-select-total" id="venta-lab-total">Total:</label>
-        <label for="venta-select-total-numero" id="venta-lab-total-numero">100.000.000</label>
+      <div class = "presupuesto-final-total">
+        <label for="presupuesto-input-condicion" id="presupuesto-lab-condicion">Metodo de Pago:</label>
+        <div class="combo-buscador" id="combo-presupuesto-condicion">
+          <input type="text" id="presupuesto-input-condicion" placeholder="..." autocomplete="off">
+          <input type="hidden" id="presupuesto-select-condicion-valor">
+          <div class="combo-lista" id="presupuesto-lista-condicion"></div>
+        </div>
+        <div class = "presupuesto-final-total-container">
+          <label for="presupuesto-select-total" id="presupuesto-lab-total">Total:</label>
+          <label for="presupuesto-select-total-numero" id="presupuesto-lab-total-numero">100.000.000</label>
+        </div>
       </div>
-      <div class = "venta-final">
-        <label for="venta-select-extra" id="venta-lab-extra">Gasto Extra:</label>
-        <div class="combo-buscador" id="combo-venta-extra">
-          <input type="text" id="venta-input-extra" placeholder="..." autocomplete="off">
+      <div class = "presupuesto-final">
+        <label for="presupuesto-select-extra" id="presupuesto-lab-extra">Gasto Extra:</label>
+        <div class="combo-buscador" id="combo-presupuesto-extra">
+          <input type="text" id="presupuesto-input-extra" placeholder="..." autocomplete="off">
         </div>
-        <label for="venta-select-obs" id="venta-lab-obs">- Observacion:</label>
-        <div class="combo-buscador" id="combo-venta-obs">
-          <input type="text" id="venta-input-obs" placeholder="..." autocomplete="off">
+        <label for="presupuesto-select-obs" id="presupuesto-lab-obs">- Observacion:</label>
+        <div class="combo-buscador" id="combo-presupuesto-obs">
+          <input type="text" id="presupuesto-input-obs" placeholder="..." autocomplete="off">
         </div>
-        <button class="venta-btn-procesar">Procesar</button>
+        <button class="presupuesto-btn-procesar">Procesar</button>
       </div>
     `,
     onAbrir: function () {
       initComboBuscador({
-        inputId: 'venta-input-cliente',
-        listaId: 'venta-lista-clientes',
-        hiddenId: 'venta-select-clientes-valor',
-        opciones: listaClientes
-      });
-
-      initComboBuscador({
-        inputId: 'venta-input-vendedor',
-        listaId: 'venta-lista-vendedores',
-        hiddenId: 'venta-select-vendedor-valor',
-        opciones: listaVendedores
-      });
-
-      initComboBuscador({
-        inputId: 'venta-input-producto',
-        listaId: 'venta-lista-productos',
-        hiddenId: 'venta-select-producto-valor',
+        inputId: 'presupuesto-input-producto',
+        listaId: 'presupuesto-lista-productos',
+        hiddenId: 'presupuesto-select-producto-valor',
         opciones: listaProductos
       });
 
@@ -656,4 +635,297 @@ function borrarProductoVenta(icono) {
 function formatearNumero(numero) {
 
     return Number(numero).toLocaleString('es-PY');
+}
+
+// PRESUPUESTO
+
+function configurarPresupuesto() {
+
+  // Crear las 5 filas vacías
+  inicializarTablaPresupuesto();
+
+  const btnAnadir = document.querySelector('.presupuesto-btn-anadir');
+
+  const inputProducto = document.getElementById(
+        'presupuesto-input-producto'
+    );
+
+    const inputCantidad = document.getElementById(
+        'presupuesto-input-cantidad'
+    );
+
+    const inputPrecio = document.getElementById(
+        'presupuesto-input-preciounitario'
+    );
+
+    const hiddenProducto = document.getElementById(
+        'presupuesto-select-producto-valor'
+    );
+
+  // =====================================================
+    // CUANDO SE SELECCIONA UN PRODUCTO
+    // =====================================================
+    inputProducto.addEventListener('change', function () {
+
+        const producto = listaProductos.find(
+            p => p.value === hiddenProducto.value
+        );
+
+        if (producto) {
+
+            inputPrecio.value = producto.precio;
+
+        }
+
+    });  
+
+    // =====================================================
+    // DETECTAR CAMBIO MEDIANTE BLUR
+    // =====================================================
+    inputProducto.addEventListener('blur', function () {
+
+        const producto = listaProductos.find(
+            p => p.value === hiddenProducto.value
+        );
+
+        if (producto) {
+
+            inputPrecio.value = producto.precio;
+
+        }
+
+    });
+
+
+    // =====================================================
+    // BOTÓN AÑADIR
+    // =====================================================
+    btnAnadir.addEventListener('click', function () {
+
+        const productoId = hiddenProducto.value;
+
+        const productoTexto = inputProducto.value.trim();
+
+        const cantidad = parseFloat(
+            inputCantidad.value
+        );
+
+        const precio = parseFloat(
+            inputPrecio.value
+        );
+
+
+        // =================================================
+        // VALIDAR PRODUCTO
+        // =================================================
+        if (!productoId) {
+
+            alert('Seleccione un producto.');
+
+            return;
+        }
+
+
+        // =================================================
+        // VALIDAR CANTIDAD
+        // =================================================
+        if (!cantidad || cantidad <= 0) {
+
+            alert('Ingrese una cantidad válida.');
+
+            inputCantidad.focus();
+
+            return;
+        }
+
+
+        // =================================================
+        // VALIDAR PRECIO
+        // =================================================
+        if (!precio || precio <= 0) {
+
+            alert('Ingrese un precio válido.');
+
+            inputPrecio.focus();
+
+            return;
+        }
+
+
+        // =================================================
+        // AGREGAR PRODUCTO A LA TABLA
+        // =================================================
+        agregarProductoTablaPresupuesto(
+            productoId,
+            productoTexto,
+            cantidad,
+            precio
+        );
+
+
+        // =================================================
+        // LIMPIAR CAMPOS
+        // =================================================
+        inputProducto.value = '';
+
+        hiddenProducto.value = '';
+
+        inputCantidad.value = '';
+
+        inputPrecio.value = '';
+
+        
+
+    });  
+  
+}
+
+// =========================================================
+// CREAR LAS 5 FILAS INICIALES
+// =========================================================
+function inicializarTablaPresupuesto() {
+    const tbody = document.getElementById('presupuesto-tabla-body');
+
+    if (!tbody) return;
+
+    tbody.innerHTML = '';
+
+    // Cambiá este número para elegir cuántas filas mostrar.
+    const cantidadFilas = 7;
+
+    for (let i = 0; i < cantidadFilas; i++) {
+        const fila = document.createElement('tr');
+
+        fila.dataset.posicion = i;
+
+        // Exactamente 6 celdas por fila.
+        fila.innerHTML = `
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        `;
+
+        tbody.appendChild(fila);
+    }
+}
+
+// =========================================================
+// AGREGAR PRODUCTO A LA TABLA
+// =========================================================
+function agregarProductoTablaPresupuesto(productoId, producto, cantidad, precio) {
+
+    const tbody = document.getElementById('presupuesto-tabla-body');
+
+    if (!tbody) return;
+
+    const filas = tbody.querySelectorAll('tr');
+
+    let filaDisponible = null;
+    let posicion = -1;
+
+    // Buscar la primera fila vacía
+    filas.forEach((fila, index) => {
+
+        if (!fila.dataset.ocupada && !filaDisponible) {
+
+            filaDisponible = fila;
+            posicion = index;
+
+        }
+
+    });
+
+
+    // =====================================================
+    // SI NO HAY FILAS VACÍAS, CREAR UNA NUEVA
+    // =====================================================
+    if (!filaDisponible) {
+
+        filaDisponible = document.createElement('tr');
+
+        posicion = filas.length;
+
+        filaDisponible.dataset.posicion = posicion;
+
+        tbody.appendChild(filaDisponible);
+
+    }
+
+
+    // =====================================================
+    // CALCULAR TOTAL
+    // =====================================================
+    const total = cantidad * precio;
+
+
+    // =====================================================
+    // MARCAR FILA COMO OCUPADA
+    // =====================================================
+    filaDisponible.dataset.ocupada = 'true';
+
+    filaDisponible.dataset.productoId = productoId;
+
+
+    // =====================================================
+    // COLOCAR DATOS DEL PRODUCTO
+    // =====================================================
+    filaDisponible.innerHTML = `
+        <td>${posicion + 1}</td>
+
+        <td>${producto}</td>
+
+        <td>${cantidad}</td>
+
+        <td>${formatearNumero(precio)}</td>
+
+        <td>${formatearNumero(total)}</td>
+
+        <td>
+            <img 
+                src="icons/editar.png"
+                class="icono-funcion"
+                alt="Editar"
+                title="Editar"
+                onclick="editarProducto(this)"
+            >
+
+            <img 
+                src="icons/borrar.png"
+                class="icono-funcion"
+                alt="Borrar"
+                title="Borrar"
+                onclick="borrarProductoVenta(this)"
+            >
+        </td>
+    `;
+}
+
+// =========================================================
+// BORRAR PRODUCTO
+// =========================================================
+function borrarProductoPresupuesto(icono) {
+
+    const fila = icono.closest('tr');
+
+    if (!fila) return;
+
+    if (confirm('¿Desea eliminar este producto?')) {
+
+        // Vaciar la fila
+        fila.innerHTML = `
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        `;
+
+        // Volver a marcarla como disponible
+        delete fila.dataset.ocupada;
+        delete fila.dataset.productoId;
+    }
 }

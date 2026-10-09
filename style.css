@@ -414,4 +414,191 @@ body {
   background-color: #f77f00;
 }
 
-/*//////// Venta - Body //////*/
+/*//////// Presupuesto - Body //////*/ /*//////// Presupuesto - Body //////*/ /*//////// Presupuesto - Body //////*/ /*//////// Venta - Body //////*/
+#combo-presupuesto-producto{
+  width: 395px;
+}
+
+#combo-presupuesto-cantidad{
+  width: 95px;
+}
+
+#combo-presupuesto-preciounitario{
+  width: 95px;
+}
+
+.presupuesto-btn-anadir{
+  margin-left: 10px;
+  padding: 2px 2px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #76c893;
+  border-radius: 2px;
+  color: #ffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.presupuesto-btn-anadir:hover{
+  background-color: #34a0a4;
+}
+
+.presupuesto-btn-borrar{
+  margin-left: 10px;
+  padding: 2px 2px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #ff4d6d;
+  border-radius: 2px;
+  color: #ffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.presupuesto-btn-borrar:hover{
+  background-color: #ef233c;
+}
+
+/* Tabla de detalle de venta */
+.presupuesto-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed;
+}
+
+.presupuesto-tabla .col-presupuesto-id {
+  width: 5%;
+}
+
+.presupuesto-tabla .col-presupuesto-producto {
+  width: 53%;
+}
+
+.presupuesto-tabla .col-presupuesto-cantidad {
+  width: 8%;
+}
+
+.presupuesto-tabla .col-presupuesto-precio {
+  width: 12%;
+}
+
+.presupuesto-tabla .col-presupuesto-total {
+  width: 12%;
+}
+
+.presupuesto-tabla .col-presupuesto-funciones {
+  width: 10%;
+}
+
+.presupuesto-tabla th,
+.presupuesto-tabla td {
+  border: 1px solid #000;
+  padding: 4px 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.presupuesto-tabla th {
+  background-color: #81a1d4;
+  color: white;
+  font-weight: 600;
+}
+
+.presupuesto-tabla td:nth-child(2) {
+  text-align: left;
+}
+
+.presupuesto-tabla tbody tr:nth-child(even) {
+  background-color: #eeeadf;
+}
+
+.icono-funcion {
+  width: 26px;
+  height: 24px;
+  cursor: pointer;
+  margin: 0 4px;
+  vertical-align: middle;
+  transition: opacity 0.2s ease;
+}
+
+.icono-funcion:hover {
+  opacity: 0.6;
+}
+
+.presupuesto-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Altura fija para todas las filas */
+.presupuesto-tabla tbody tr {
+    height: 35px;
+}
+
+/* Mantener también la altura cuando la fila está vacía */
+.presupuesto-tabla tbody td {
+    height: 35px;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+}
+
+/* Encabezado */
+.presupuesto-tabla thead th {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.presupuesto-final-total{
+  display: inline-block;
+  margin-top: 0.5%;
+  width: 100%;
+}
+
+#combo-presupuesto-condicion{
+  width: 200px;
+}
+
+.presupuesto-final-total-container{
+  background-color: #cdb4db;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 56.9%;
+}
+
+#presupuesto-lab-total-numero{
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+
+.presupuesto-final{
+  display: inline-block;
+  margin-top: 0.5%;
+}
+
+#combo-presupuesto-extra{
+  width: 90px;
+}
+
+#combo-presupuesto-obs{
+  width: 690px;
+}
+
+.presupuesto-btn-procesar{
+  background-color: #fcbf49;
+  border-radius: 2px;
+  color: #ffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.presupuesto-btn-procesar:hover{
+  background-color: #f77f00;
+}
